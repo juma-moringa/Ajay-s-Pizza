@@ -22,5 +22,5 @@ To access this project on your local files, you can clone it using these steps
 1. jQuery
 ### Live Site
 View [live](add the .io link)
-### Licence
-This project is under the  [MIT](LICENSE) licence.
+### License
+This project is under the  [MIT](LICENSE) license.
