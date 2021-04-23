@@ -50,10 +50,63 @@
                 That
                 way when you sink your incisors into the NEW Epic Stuffed Crust,<br> you'll be biting into better rewards.
             </p><br><br>
-            <h2>Order here</h2>
+            <h2>Order here <br>OUR  PIZZA  MENU</h2>
         </div>
     </div>
     </div>
+    <form class="form-group" id="custom-pizza">
+        <div class="order">
+            <div class="row">
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="Assets/moretops.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Sizes of pizza</h5>
+                            <p class="card-text">Select the pizza size:</p>
+                            <select required class="form-control" id="size">
+                                <option value="large-pizza">large (1200)</option>
+                                <option value="medium-pizza">medium (800)</option>
+                                <option value="small-pizza">small (550)</option>  
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Crust</h5>
+                            <p class="card-text">Choose your preferred crust:</p>
+                            <select required class="form-control" id="crust">
+                                <option value="cheese-filled">Cheese filled (100)</option>
+                                <option value="thick">Gluten free (150)</option>
+                                <option value="stuffed">Stuffed (150)</option>
+                                <option value="crispy">Crispy (150)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-9">
+                    <div class="card">
+                        <img src="" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Toppings</h5>
+                            <p class="card-text">Choose toppings:</p>
+                            <select required class="form-control" id="toppings">
+                                <option value="pepperoni">Pepperoni (100)</option>
+                                <option value="olives">Olives (150)</option>
+                                <option value="bacon">Bacon (250)</option>
+                                <option value="mushrooms"> Mixed sliced Mushrooms (150)</option>
+                                <option value="chicken">Chicken (250)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Your Order</button>
+        <input type="number" id="amount" placeholder="Number of pizzas"required min="1">
+    </form>
 </body>
 
 </html>
