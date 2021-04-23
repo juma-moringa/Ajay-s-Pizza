@@ -1,0 +1,10 @@
+body {
+    background-image: url(../Assets/oven.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    line-height: 1.62em;
+    /* font-family: 'Sacramento', cursive; */
+    font-family: 'Qwigley', cursive;
+}
