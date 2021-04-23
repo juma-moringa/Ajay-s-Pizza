@@ -8,3 +8,12 @@ body {
     /* font-family: 'Sacramento', cursive; */
     font-family: 'Qwigley', cursive;
 }
+.nav {
+    background-color: grey;
+    color:black;
+    height: 150px;
+    border-bottom: 3px solid #fff;
+}
+img{
+    border-radius: 1cm;
+}
