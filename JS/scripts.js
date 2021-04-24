@@ -55,46 +55,44 @@ $(document).ready(function () {
             this.pizzaPrice += 165;
         }
     };
-      //Business logic
-      function Address(addresses) {
+    //Business logic
+    //setting up the addresses
+    function Address(addresses) {
         this.addresses = addresses;
         this.deliveryAddress = (addresses);
-      }
+    }
 
-      //order
-      Order.prototype.finalCost = function() {
+    //order
+    Order.prototype.finalCost = function () {
         var cartTotalPrice = [];
         for (var arrayElement = 0; arrayElement < priceArray.length; arrayElement++) {
-          cartTotalPrice += priceArray[arrayElement];
+            cartTotalPrice += priceArray[arrayElement];
         }
         return cartTotalPrice;
-      };
-    //   $(".btn.check-out").click(function() {});
-      $("form#custom-pizza").submit(function(event) {
+    };
+    //customers selection 
+    $("form#custom-pizza").submit(function (event) {
         event.preventDefault();
         var size = $("select#size").val();
         var crust = $("select#crust").val();
         var toppings = $("select#toppings").val();
-        var pizzaDetails = (size + " - " + crust + " - " + toppings);
-        var newPizzaOrder = new Order(size, crust,toppings);
+        var pizzaDetails = (size + " ," + crust + " crust with " + toppings);
+        var newPizzaOrder = new Order(size, crust, toppings);
         newPizzaOrder.pizzaCost();
         priceArray.push(newPizzaOrder.pizzaPrice);
         $("#pizza-cost").text(newPizzaOrder.finalCost());
         $("#output-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
-    
-      });
-    //   $("#submit-pizza").click(function() {
-    //     $("#customer-delivery").toggle();
-    //   });
-      $("#checkout-btn").click(function() {
+
+    });
+    $("#checkout-btn").click(function () {
         $("#final-order-details").toggle();
-      });
-      $("form#address-form").submit(function(event) {
+    });
+    $("form#address-form").submit(function (event) {
         $(".address-form").toggle();
         event.preventDefault();
         var address = $("input#location").val();
         var newAddress = new Address(address);
-        $("#delivery-option").text("Your pizza will be delivered to: " + newAddress.deliveryAddress);
-      });
-    
+        $("#delivery-option").text("Your pizza is being prepared once done it will be delivered to " + newAddress.deliveryAddress);
+    });
+
 });
