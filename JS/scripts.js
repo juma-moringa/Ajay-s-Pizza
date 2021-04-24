@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     //business logic
-    var totalPriceArray = [];
+    var priceArray = [];
 
     function Order(size, crust, toppings, amount) {
         this.size = size;
@@ -69,4 +69,17 @@ $(document).ready(function () {
         }
         return cartTotalPrice;
       };
+      $("form#custom-pizza").submit(function(event) {
+        event.preventDefault();
+        var size = $("select#size").val();
+        var crust = $("select#crust").val();
+        var toppings = $("select#toppings").val();
+        var pizzaDetails = (toppings + " - " + crust + " - " + size);
+        var newPizzaOrder = new Order(toppings, size, crust,);
+        newPizzaOrder.pizzaCost();
+        priceArray.push(newPizzaOrder.pizzaPrice);
+        $("#pizza-cost").text(newPizzaOrder.finalCost());
+        $("#output-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
+    
+      });
 });
