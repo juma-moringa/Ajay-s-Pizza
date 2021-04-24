@@ -1,12 +1,12 @@
 body {
-    background-image: url(../Assets/oven.jpg);
+    background-image: url(../Assets/handpizza.jpg);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 30px;
     line-height: 1.62em;
-    /* font-family: 'Sacramento', cursive; */
     font-family: 'Qwigley', cursive;
+    font-family: 'Sue Ellen Francisco', cursive;
 }
 .nav {
     height: 150px;
@@ -47,7 +47,7 @@ h2 {
     color: #FDB913
   }
 
-#submit-pizza {
+#submit-pizza ,#amount {
     float: right;
     margin-right: 200px;
     color: #fff;
@@ -56,10 +56,17 @@ h2 {
     text-align: center;
     color: #fff;
 }
+#amount{
+    margin-left: 79%;
+}
 .footer {
     text-align: center;
     font-size: 25px;
     color: #fff;
+    height: 150px;
+    background-color: grey;
+    color:black;
+    font-family: 'Sue Ellen Francisco', cursive;
 }
 
 
