@@ -1,6 +1,11 @@
+//sy
+
 $(document).ready(function () {
     $("#final-order-details").hide();
     $("#deliver").hide();
+
+
+
     //business logic
     var totalPriceArray = [];
 
@@ -12,7 +17,10 @@ $(document).ready(function () {
         this.amount = amount;
 
     }
+
+
     Order.prototype.pizzaCost = function () {
+        //pizza size and its cost
         if (this.size === "small-pizza") {
             this.pizzaPrice += 550;
         } else if (this.size === "medium-pizza") {
@@ -20,6 +28,7 @@ $(document).ready(function () {
         } else if (this.size === "large-pizza") {
             this.pizzaPrice += 1200;
         }
+        //pizza crust and its cost
         if (this.crust === "cheese-filled") {
             this.pizzaPrice += 150;
         } else if (this.crust === "gluten-free") {
@@ -29,6 +38,7 @@ $(document).ready(function () {
         } else if (this.crust === "crispy") {
             this.pizzaPrice += 150;
         }
+        //pizza toppings and its cost
         if (this.toppings === "pepperoni") {
             this.pizzaPrice += 100;
         } else if (this.toppings === "olives") {
@@ -45,4 +55,18 @@ $(document).ready(function () {
             this.pizzaPrice += 165;
         }
     };
+      //Business logic
+      function Address(addresses) {
+        this.addresses = addresses;
+        this.deliveryAddress = (addresses);
+      }
+
+      //order
+      Order.prototype.finalCost = function() {
+        var cartTotalPrice = [];
+        for (var arrayElement = 0; arrayElement < totalPriceArray.length; arrayElement++) {
+          cartTotalPrice += totalPriceArray[arrayElement];
+        }
+        return cartTotalPrice;
+      };
 });
