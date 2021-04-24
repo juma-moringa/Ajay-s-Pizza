@@ -84,7 +84,10 @@ $(document).ready(function () {
     
       });
       $("#submit-pizza").click(function() {
-        $("#customer-deliver").toggle();
+        $("#customer-delivery").toggle();
+      });
+      $("#checkout-btn").click(function() {
+        $("#order-details").toggle();
       });
     
 });
