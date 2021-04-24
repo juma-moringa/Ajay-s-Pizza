@@ -28,10 +28,10 @@ img{
 }
 .card {
     width: 80%;
-    margin-top: 60px;
-    border-radius: 12px;
     min-height: 460px;
     max-width: 700px;
+    margin-top: 60px;
+    border-radius: 12px;
     position: relative;
     color:blue;
     background: #fff;
@@ -50,7 +50,7 @@ h2 {
 #submit-pizza ,#amount {
     float: right;
     margin-right: 200px;
-    color: #fff;
+    color: black;
 }
 #price-content {
     text-align: center;
