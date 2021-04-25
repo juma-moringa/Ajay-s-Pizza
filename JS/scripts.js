@@ -1,4 +1,4 @@
-//sy
+//hidding the oder details by default
 
 $(document).ready(function () {
     $("#final-order-details").hide();
@@ -86,9 +86,9 @@ $(document).ready(function () {
         $("#output-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
 
     });
-    $("#checkout-btn").click(function () {
-        $("#final-order-details").toggle();
-    });
+    // $("#checkout-btn").click(function () {
+    //     $("#final-order-details").toggle();
+    // });
     $("form#address-form").submit(function (event) {
         $(".address-form").toggle();
         event.preventDefault();

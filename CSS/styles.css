@@ -5,7 +5,7 @@ body {
     background-size: cover;
     font-size: 30px;
     line-height: 1.62em;
-    font-family: 'Qwigley', cursive;
+    /* font-family: 'Qwigley', cursive; */
     font-family: 'Sue Ellen Francisco', cursive;
 }
 .nav {
@@ -39,7 +39,7 @@ img{
 }
 h2 {
     text-align: center;
-    color: #fff
+    color: #fff;
 }
 .orders {
     margin-left: 100px;
