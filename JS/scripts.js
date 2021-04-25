@@ -86,15 +86,15 @@ $(document).ready(function () {
         $("#output-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
 
     });
-    // $("#checkout-btn").click(function () {
-    //     $("#final-order-details").toggle();
-    // });
+    $("#checkout-btn").click(function () {
+        $("#final-order-details").toggle();
+    });
     $("form#address-form").submit(function (event) {
         $(".address-form").toggle();
         event.preventDefault();
         var address = $("input#location").val();
         var newAddress = new Address(address);
-        $("#delivery-option").text("Your pizza is being prepared once done it will be delivered to " + newAddress.deliveryAddress);
+        $("#delivery-option").text("Your pizza is being prepared once done it will be delivered to " + newAddress.deliveryAddress + "at a fee of ksh 150.");
     });
 
 });

@@ -44,8 +44,7 @@ h2 {
 .orders {
     margin-left: 100px;
     margin-right: 100px;
-    color: #FDB913
-  }
+}
 
 #submit-pizza ,#amount {
     float: right;
