@@ -2,7 +2,7 @@
 ## Author
 Juma Allan
 ## Description
-Its a website that expalins more about ......
+Its a website that expalins more about ajay's pizza ,their specialities and what they offer in their day to day selling of freshly custom made pizzas.
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
