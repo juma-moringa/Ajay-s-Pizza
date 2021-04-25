@@ -21,6 +21,6 @@ To access this project on your local files, you can clone it using these steps
 1. JavaScript
 1. jQuery
 ### Live Site
-View [live](add the .io link)
+View [live](https://juma-moringa.github.io/Ajay-s-Pizza/)
 ### License
 This project is under the  [MIT](LICENSE) license.
