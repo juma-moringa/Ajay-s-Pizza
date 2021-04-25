@@ -27,6 +27,8 @@ $(document).ready(function () {
             this.pizzaPrice += 800;
         } else if (this.size === "large-pizza") {
             this.pizzaPrice += 1200;
+        } else if (this.size === "jumbo") {
+            this.pizzaPrice += 1500;
         }
         //pizza crust and its cost
         if (this.crust === "cheese-filled") {
